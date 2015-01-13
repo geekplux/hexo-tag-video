@@ -1,0 +1,26 @@
+{
+  "name": "hexo-tag-video",
+  "version": "0.0.1",
+  "description": "the tag plugin of Hexo to insert a video",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekplux/hexo-tag-video.git"
+  },
+  "keywords": [
+    "tag",
+    "plugin",
+    "hexo",
+    "video"
+  ],
+  "author": {
+    "name": "GeekPlux",
+    "email": "geekplux@gmail.com",
+    "url": "http://www.geekplux.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geekplux/hexo-tag-video/issues"
+  },
+  "homepage": "https://github.com/geekplux/hexo-tag-video"
+}
