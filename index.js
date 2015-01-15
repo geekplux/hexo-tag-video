@@ -2,17 +2,22 @@
 * video tag
 *
 * Syntax:
-*   {% video video_site video_id %}
+*   {% video 'videoCode' %}
 *
 * Sample:
-*   {% video youku XNTkyMTM0MzY4 %}
+*   {% video '<iframe height=498 width=510 src="http://player.youku.com/embed/XNTkyMTM0MzY4" frameborder=0 allowfullscreen></iframe>' %}
 *
 */
 
 hexo.extend.tag.register('video', function(args, content, options){
-  var videoSite = args[0];
-  var videoId = args[1];
 
-  if (videoSite === "youku")
-    return '<div class="video-container"><iframe height=498 width=510 src="http://player.youku.com/embed/' + videoId + '" frameborder=0 allowfullscreen></iframe></div>';
+  for (var i = 0; i < args.length; ++i) {
+    if (args[i].search('height') !== -1 || args[i].search('width') !== -1 || args[i].search('style') !== -1)
+      args[i] = '';
+  };
+
+  var videoCode = args.join(' ');
+  videoCode = videoCode.replace(/(^\s*\')|(\'\s*$)/g, "");
+
+  return '<div class="video-container">' + videoCode + '</div>';
 });

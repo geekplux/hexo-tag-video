@@ -2,10 +2,9 @@
 
 This is a tag plugin of Hexo to insert a video on your blog posts.
 
-Support:
+If you insert each video `<iframe>` directly into your markdown file, the video which in the generated page is not responsive......so I made this plugin.
 
-- youku
-
+如果用每个视频的 `<iframe>` 通用分享代码直接插入到 markdown 文件中，则生成的页面中视频不是响应式的……所以就做了这个插件。
 
 ## Installation
 
@@ -27,11 +26,13 @@ plugins:
 The following code insert the video player in your post:
 
 ```
-{% video video_site video_id %}
+{% video 'videoCode' %}
 ```
+
+This `videoCode` is the **embed code** of each video. In general, the `videoCode` can be finded when you click the **Share** button under the video.
 
 #### Example
 
 ```
-{% video youku XNTkyMTM0MzY4 %}
+{% video '<iframe height=498 width=510 src="http://player.youku.com/embed/XNTkyMTM0MzY4" frameborder=0 allowfullscreen></iframe>' %}
 ```
