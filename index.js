@@ -9,12 +9,11 @@
 *
 */
 
-hexo.extend.tag.register('video', function(args, content, options){
+hexo.extend.tag.register('video', function(args, content, options) {
 
-  for (var i = 0; i < args.length; ++i) {
+  for (var i = 0, len = args.length; i < len; ++i)
     if (args[i].search('height') !== -1 || args[i].search('width') !== -1 || args[i].search('style') !== -1)
       args[i] = '';
-  };
 
   var videoCode = args.join(' ');
   videoCode = videoCode.replace(/(^\s*\')|(\'\s*$)/g, "");
