@@ -1,5 +1,8 @@
 # hexo-tag-video
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+
 This is a tag plugin of Hexo to insert a video on your blog posts.
 
 If you insert each video `<iframe>` directly into your markdown file, the video which in the generated page is not responsive......so I made this plugin.
@@ -36,3 +39,10 @@ This `videoCode` is the **embed code** of each video. In general, the `videoCode
 ```
 {% video '<iframe height=498 width=510 src="http://player.youku.com/embed/XNTkyMTM0MzY4" frameborder=0 allowfullscreen></iframe>' %}
 ```
+
+
+
+[npm-image]: https://img.shields.io/npm/v/hexo-tag-video.svg
+[npm-url]: https://npmjs.org/package/hexo-tag-video
+[downloads-image]: https://img.shields.io/npm/dm/hexo-tag-video.svg
+[downloads-url]: https://npmjs.org/package/hexo-tag-video
