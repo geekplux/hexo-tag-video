@@ -11,11 +11,11 @@
 
 hexo.extend.tag.register('video', function(args, content, options) {
 
-  for (var i = 0, len = args.length; i < len; ++i)
-    if (args[i].search('height') !== -1 || args[i].search('width') !== -1 || args[i].search('style') !== -1)
-      args[i] = '';
+  var videoCode = args[0];
 
-  var videoCode = args.join(' ');
+  videoCode = videoCode.replace(/height\=\d*/, '');
+  videoCode = videoCode.replace(/width\=\d*/, '');
+  videoCode = videoCode.replace(/style/, '');
   videoCode = videoCode.replace(/(^\s*\')|(\'\s*$)/g, "");
 
   return '<div class="video-container">' + videoCode + '</div>';
