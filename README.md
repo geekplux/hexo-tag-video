@@ -17,7 +17,7 @@ Run the following command in the root directory of hexo:
 npm install hexo-tag-video --save
 ```
 
-And enable the plugin in your `_config.yml.`
+And enable the plugin in your `_config.yml.` if your Hexo version is below 3.0.
 
 ```
 plugins:
