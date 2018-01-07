@@ -35,9 +35,9 @@ The following code insert the video player in your post:
 This `videoCode` is the **embed code** of each video. In general, the `videoCode` can be finded when you click the **Share** button under the video.
 
 #### Example
-
+`For Youtube video`
 ```
-{% video '<iframe height=498 width=510 src="http://player.youku.com/embed/XNTkyMTM0MzY4" frameborder=0 allowfullscreen></iframe>' %}
+{% video <iframe width="560" height="315" src="https://www.youtube.com/embed/YES16mVB0lQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> %}
 ```
 
 
